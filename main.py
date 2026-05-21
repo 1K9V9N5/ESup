@@ -275,7 +275,7 @@ if st.button("Unverbindliche Empfehlung berechnen"):
                 <h4>💪 Kreatin Monohydrat</h4>
                 <p><b>Möglicher Richtwert:</b> ca. {kr_menge}g täglich nach der Belastung.</p>
                 <p>
-                    <a href="https://amazon.de" target="_blank" style="color:#84CC16; text-decoration:none; font-weight:bold;">
+                    <a href='https://amazon.de' target='_blank' style='color:#84CC16; text-decoration:none; font-weight:bold;'>
                         Geprüftes Produkt ansehen →
                     </a>
                 </p>
@@ -289,7 +289,7 @@ if st.button("Unverbindliche Empfehlung berechnen"):
             <h4>✨ Premium Kollagen</h4>
             <p><b>Allgemeine Orientierung:</b> ca. {kol_kapseln} Kapseln täglich für deine Hautelastizität und Gelenke.</p>
             <p>
-                <a href="https://amazon.de" target="_blank" style="color:#84CC16; text-decoration:none; font-weight:bold;">
+                <a href='https://amazon.de' target='_blank' style='color:#84CC16; text-decoration:none; font-weight:bold;'>
                     Geprüftes Produkt ansehen →
                 </a>
             </p>
@@ -303,7 +303,7 @@ if st.button("Unverbindliche Empfehlung berechnen"):
                 <h4>🥛 Molkenprotein (Whey)</h4>
                 <p><b>Allgemeine Orientierung:</b> 1-2 Shakes à 30g zur Deckung des sportlich erhöhten Eiweißbedarfs.</p>
                 <p>
-                    <a href="https://amazon.de" target="_blank" style="color:#84CC16; text-decoration:none; font-weight:bold;">
+                    <a href='https://amazon.de' target='_blank' style='color:#84CC16; text-decoration:none; font-weight:bold;'>
                         Geprüftes Produkt ansehen →
                     </a>
                 </p>
@@ -317,7 +317,7 @@ if st.button("Unverbindliche Empfehlung berechnen"):
                 <h4>🌱 Veganes Algenöl (Omega-3)</h4>
                 <p><b>Allgemeine Orientierung:</b> 2 Kapseln täglich zu einer Hauptmahlzeit als fischfreie Alternative.</p>
                 <p>
-                    <a href="https://amazon.de" target="_blank" style="color:#84CC16; text-decoration:none; font-weight:bold;">
+                    <a href='https://amazon.de' target='_blank' style='color:#84CC16; text-decoration:none; font-weight:bold;'>
                         Fischfreie Alternative ansehen →
                     </a>
                 </p>
@@ -329,7 +329,7 @@ if st.button("Unverbindliche Empfehlung berechnen"):
                 <h4>🐟 Premium Omega-3 (Fischöl)</h4>
                 <p><b>Allgemeine Orientierung:</b> 1-2 Kapseln täglich zur Grundversorgung.</p>
                 <p>
-                    <a href="https://amazon.de" target="_blank" style="color:#84CC16; text-decoration:none; font-weight:bold;">
+                    <a href='https://amazon.de' target='_blank' style='color:#84CC16; text-decoration:none; font-weight:bold;">
                         Geprüftes Produkt ansehen →
                     </a>
                 </p>
@@ -343,7 +343,7 @@ if st.button("Unverbindliche Empfehlung berechnen"):
                 <h4>☀️ Vitamin D3 + K2</h4>
                 <p><b>Allgemeine Orientierung:</b> 1 Tropfen/Kapsel jeden zweiten Tag bei geringer Sonnenexposition.</p>
                 <p>
-                    <a href="https://amazon.de" target="_blank" style="color:#84CC16; text-decoration:none; font-weight:bold;">
+                    <a href='https://amazon.de' target='_blank' style='color:#84CC16; text-decoration:none; font-weight:bold;'>
                         Geprüftes Produkt ansehen →
                     </a>
                 </p>
@@ -357,7 +357,7 @@ if st.button("Unverbindliche Empfehlung berechnen"):
                 <h4>🔋 Regeneration & Gelenke (Magnesium, Zink, MSM)</h4>
                 <p><b>Allgemeine Orientierung:</b> Essenziell bei hoher Gelenkbelastung und Muskelspannung. Magnesium vor dem Schlafen einnehmen.</p>
                 <p>
-                    <a href="https://amazon.de" target="_blank" style="color:#84CC16; text-decoration:none; font-weight:bold;">
+                    <a href='https://amazon.de' target='_blank' style='color:#84CC16; text-decoration:none; font-weight:bold;'>
                         Regenerations-Bundle ansehen →
                     </a>
                 </p>
@@ -371,7 +371,7 @@ if st.button("Unverbindliche Empfehlung berechnen"):
                 <h4>🚀 Fokus & Pump Matrix (Pre-Workout Allrounder)</h4>
                 <p><b>Allgemeine Orientierung:</b> Ca. 30–45 Minuten vor harten Einheiten für mentalen Fokus und gesteigerten Blutfluss.</p>
                 <p>
-                    <a href="https://amazon.de" target="_blank" style="color:#84CC16; text-decoration:none; font-weight:bold;">
+                    <a href='https://amazon.de' target='_blank' style='color:#84CC16; text-decoration:none; font-weight:bold;'>
                         Fokus-Produkte ansehen →
                     </a>
                 </p>
@@ -385,12 +385,13 @@ if st.button("Unverbindliche Empfehlung berechnen"):
                 <h4>🌿 Ashwagandha (KSM-66)</h4>
                 <p><b>Allgemeine Orientierung:</b> 1 Kapsel am Abend zur Unterstützung der Cortisolsenkung.</p>
                 <p>
-                    <a href="https://amazon.de" target="_blank" style="color:#84CC16; text-decoration:none; font-weight:bold;">
+                    <a href='https://amazon.de' target='_blank' style='color:#84CC16; text-decoration:none; font-weight:bold;'>
                         Geprüftes Produkt ansehen →
                     </a>
                 </p>
             </div>
             """, unsafe_allow_html=True)
+
 
 
 # ==========================================

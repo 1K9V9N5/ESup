@@ -364,4 +364,4 @@ st.warning("Medizinischer Hinweis: Alle hier ausgegebenen Werte und Texte dienen
 
 col1, col2 = st.columns(2)
 with col2:
-    st.caption(":gray[*Built by K.K.*]")
+    st.caption(":silver[*Built by K.K.*]")

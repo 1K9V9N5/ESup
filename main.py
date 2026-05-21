@@ -364,4 +364,5 @@ st.warning("Medizinischer Hinweis: Alle hier ausgegebenen Werte und Texte dienen
 
 col1, col2 = st.columns(2)
 with col2:
-    st.caption(":silver[*Built by K.K.*]")
+    # Reines Weiß und kursiv über die integrierten Streamlit-Farbcodes
+    st.caption(":white[*Built by K.K.*]")

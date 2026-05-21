@@ -266,46 +266,39 @@ if st.button("Unverbindliche Empfehlung berechnen"):
     else:
         st.success("Berechnung abgeschlossen.")
         st.markdown("### 📋 Vorgeschlagene Matrix")
+        st.info("💡 Tipp: Kopiere den Suchbegriff einfach (Doppelklick am PC / Gedrückt halten am Handy) und füge ihn bei Amazon ein!")
         
-        # 1. Dynamische Kreatin-Berechnung
+        # 1. Kreatin-Berechnung
         if sport_tage >= 3:
+            kr_menge = round(gewicht * 0.05, 1)
             st.markdown(f"""
             <div class="result-card">
                 <h4>💪 Kreatin Monohydrat</h4>
-                <p><b>Allgemeine Orientierung:</b> Häufig wird die Einnahme nach der Belastung empfohlen.</p>
-                <p>
-                    <a href='https://amazon.de' target='_blank' style='color:#84CC16; text-decoration:none; font-weight:bold;'>
-                        Geprüftes Produkt ansehen →
-                    </a>
-                </p>
+                <p><b>Möglicher Richtwert:</b> ca. {kr_menge}g täglich nach der Belastung.</p>
+                <p style="font-size:0.85rem; color:#84CC16; font-weight:bold; margin-bottom:5px;">🔍 Suchbegriff für Amazon:</p>
+                <code style="background:#121417; padding:6px 12px; border-radius:6px; color:#F8FAFC; display:inline-block; border:1px solid #262B35; font-family:monospace; font-size:0.9rem;">Kreatin Monohydrat Pulver hochrein</code>
             </div>
             """, unsafe_allow_html=True)
 
-        # 2. Dynamische Kollagen-Berechnung
-        if sport_tage >= 4:
-            st.markdown(f"""
-            <div class="result-card">
-                <h4>✨ Premium Kollagen</h4>
-                <p><b>Allgemeine Orientierung:</b> Üblich zur Unterstützung von Hautelastizität und Gelenken.</p>
-                <p>
-                    <a href='https://amazon.de' target='_blank' style='color:#84CC16; text-decoration:none; font-weight:bold;'>
-                        Geprüftes Produkt ansehen →
-                    </a>
-                </p>
-            </div>
-            """, unsafe_allow_html=True)
+        # 2. Kollagen-Berechnung
+        kol_kapseln = 3 if sport_tage >= 4 else 2
+        st.markdown(f"""
+        <div class="result-card">
+            <h4>✨ Premium Kollagen</h4>
+            <p><b>Allgemeine Orientierung:</b> ca. {kol_kapseln} Kapseln täglich für deine Hautelastizität und Gelenke.</p>
+            <p style="font-size:0.85rem; color:#84CC16; font-weight:bold; margin-bottom:5px;">🔍 Suchbegriff für Amazon:</p>
+            <code style="background:#121417; padding:6px 12px; border-radius:6px; color:#F8FAFC; display:inline-block; border:1px solid #262B35; font-family:monospace; font-size:0.9rem;">Kollagen Hydrolysat Kapseln Premium</code>
+        </div>
+        """, unsafe_allow_html=True)
 
         # 3. Whey Protein an Trainingstagen
         if sport_tage >= 1:
             st.markdown("""
             <div class="result-card">
                 <h4>🥛 Molkenprotein (Whey)</h4>
-                <p><b>Allgemeine Orientierung:</b> Üblich zur Deckung des sportlich erhöhten Eiweißbedarfs.</p>
-                <p>
-                    <a href='https://amazon.de' target='_blank' style='color:#84CC16; text-decoration:none; font-weight:bold;'>
-                        Geprüftes Produkt ansehen →
-                    </a>
-                </p>
+                <p><b>Allgemeine Orientierung:</b> 1-2 Shakes à 30g zur Deckung des sportlich erhöhten Eiweißbedarfs.</p>
+                <p style="font-size:0.85rem; color:#84CC16; font-weight:bold; margin-bottom:5px;">🔍 Suchbegriff für Amazon:</p>
+                <code style="background:#121417; padding:6px 12px; border-radius:6px; color:#F8FAFC; display:inline-block; border:1px solid #262B35; font-family:monospace; font-size:0.9rem;">Molkenprotein Whey Pulver neutral</code>
             </div>
             """, unsafe_allow_html=True)
 
@@ -314,24 +307,18 @@ if st.button("Unverbindliche Empfehlung berechnen"):
             st.markdown("""
             <div class="result-card">
                 <h4>🌱 Veganes Algenöl (Omega-3)</h4>
-                <p><b>Allgemeine Orientierung:</b> Oft als fischfreie Alternative zur Nahrungsergänzung genutzt.</p>
-                <p>
-                    <a href='https://amazon.de' target='_blank' style='color:#84CC16; text-decoration:none; font-weight:bold;'>
-                        Fischfreie Alternative ansehen →
-                    </a>
-                </p>
+                <p><b>Allgemeine Orientierung:</b> 2 Kapseln täglich zu einer Hauptmahlzeit als fischfreie Alternative.</p>
+                <p style="font-size:0.85rem; color:#84CC16; font-weight:bold; margin-bottom:5px;">🔍 Suchbegriff für Amazon:</p>
+                <code style="background:#121417; padding:6px 12px; border-radius:6px; color:#F8FAFC; display:inline-block; border:1px solid #262B35;">Algenoel Omega 3 Kapseln hochdosiert</code>
             </div>
             """, unsafe_allow_html=True)
         else:
             st.markdown("""
             <div class="result-card">
                 <h4>🐟 Premium Omega-3 (Fischöl)</h4>
-                <p><b>Allgemeine Orientierung:</b> Wird oft zur Grundversorgung genutzt.</p>
-                <p>
-                    <a href='https://amazon.de' target='_blank' style='color:#84CC16; text-decoration:none; font-weight:bold;'>
-                        Geprüftes Produkt ansehen →
-                    </a>
-                </p>
+                <p><b>Allgemeine Orientierung:</b> 1-2 Kapseln täglich zur Grundversorgung.</p>
+                <p style="font-size:0.85rem; color:#84CC16; font-weight:bold; margin-bottom:5px;">🔍 Suchbegriff für Amazon:</p>
+                <code style="background:#121417; padding:6px 12px; border-radius:6px; color:#F8FAFC; display:inline-block; border:1px solid #262B35; font-family:monospace; font-size:0.9rem;">Omega 3 Fischoel Kapseln hochdosiert</code>
             </div>
             """, unsafe_allow_html=True)
 
@@ -340,12 +327,9 @@ if st.button("Unverbindliche Empfehlung berechnen"):
             st.markdown("""
             <div class="result-card">
                 <h4>☀️ Vitamin D3 + K2</h4>
-                <p><b>Allgemeine Orientierung:</b> Üblich bei geringer Sonnenexposition.</p>
-                <p>
-                    <a href='https://amazon.de' target='_blank' style='color:#84CC16; text-decoration:none; font-weight:bold;'>
-                        Geprüftes Produkt ansehen →
-                    </a>
-                </p>
+                <p><b>Allgemeine Orientierung:</b> 1 Tropfen/Kapsel jeden zweiten Tag bei geringer Sonnenexposition.</p>
+                <p style="font-size:0.85rem; color:#84CC16; font-weight:bold; margin-bottom:5px;">🔍 Suchbegriff für Amazon:</p>
+                <code style="background:#121417; padding:6px 12px; border-radius:6px; color:#F8FAFC; display:inline-block; border:1px solid #262B35; font-family:monospace; font-size:0.9rem;">Vitamin D3 K2 Tropfen Depot</code>
             </div>
             """, unsafe_allow_html=True)
 
@@ -354,12 +338,9 @@ if st.button("Unverbindliche Empfehlung berechnen"):
             st.markdown("""
             <div class="result-card">
                 <h4>🔋 Regeneration & Gelenke (Magnesium, Zink, MSM)</h4>
-                <p><b>Allgemeine Orientierung:</b> Wird oft bei hoher Gelenkbelastung genutzt.</p>
-                <p>
-                    <a href='https://amazon.de' target='_blank' style='color:#84CC16; text-decoration:none; font-weight:bold;'>
-                        Regenerations-Bundle ansehen →
-                    </a>
-                </p>
+                <p><b>Allgemeine Orientierung:</b> Essenziell bei hoher Gelenkbelastung und Muskelspannung. Magnesium vor dem Schlafen einnehmen.</p>
+                <p style="font-size:0.85rem; color:#84CC16; font-weight:bold; margin-bottom:5px;">🔍 Suchbegriff für Amazon:</p>
+                <code style="background:#121417; padding:6px 12px; border-radius:6px; color:#F8FAFC; display:inline-block; border:1px solid #262B35; font-family:monospace; font-size:0.9rem;">Magnesium Bisglycinat Zink Kapseln</code>
             </div>
             """, unsafe_allow_html=True)
 
@@ -368,12 +349,9 @@ if st.button("Unverbindliche Empfehlung berechnen"):
             st.markdown("""
             <div class="result-card">
                 <h4>🚀 Fokus & Pump Matrix (Pre-Workout Allrounder)</h4>
-                <p><b>Allgemeine Orientierung:</b> Wird oft zur Unterstützung vor Trainingseinheiten verwendet.</p>
-                <p>
-                    <a href='https://amazon.de' target='_blank' style='color:#84CC16; text-decoration:none; font-weight:bold;'>
-                        Fokus-Produkte ansehen →
-                    </a>
-                </p>
+                <p><b>Allgemeine Orientierung:</b> Ca. 30–45 Minuten vor harten Einheiten für mentalen Fokus und gesteigerten Blutfluss.</p>
+                <p style="font-size:0.85rem; color:#84CC16; font-weight:bold; margin-bottom:5px;">🔍 Suchbegriff für Amazon:</p>
+                <code style="background:#121417; padding:6px 12px; border-radius:6px; color:#F8FAFC; display:inline-block; border:1px solid #262B35; font-family:monospace; font-size:0.9rem;">Pre Workout Booster Citrullin Beta Alanin</code>
             </div>
             """, unsafe_allow_html=True)
 
@@ -382,14 +360,12 @@ if st.button("Unverbindliche Empfehlung berechnen"):
             st.markdown("""
             <div class="result-card">
                 <h4>🌿 Ashwagandha (KSM-66)</h4>
-                <p><b>Allgemeine Orientierung:</b> Häufig zur Unterstützung in stressigen Zeiten genutzt.</p>
-                <p>
-                    <a href='https://amazon.de' target='_blank' style='color:#84CC16; text-decoration:none; font-weight:bold;'>
-                        Geprüftes Produkt ansehen →
-                    </a>
-                </p>
+                <p><b>Allgemeine Orientierung:</b> 1 Kapsel am Abend zur Unterstützung der Cortisolsenkung.</p>
+                <p style="font-size:0.85rem; color:#84CC16; font-weight:bold; margin-bottom:5px;">🔍 Suchbegriff für Amazon:</p>
+                <code style="background:#121417; padding:6px 12px; border-radius:6px; color:#F8FAFC; display:inline-block; border:1px solid #262B35; font-family:monospace; font-size:0.9rem;">Ashwagandha KSM 66 Kapseln hochdosiert</code>
             </div>
             """, unsafe_allow_html=True)
+
 
 
 

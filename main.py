@@ -267,7 +267,7 @@ if st.button("Unverbindliche Empfehlung berechnen"):
         st.success("Berechnung abgeschlossen.")
         st.markdown("### 📋 Vorgeschlagene Matrix")
         
-        # 1. Dynamische Kreatin-Berechnung
+        # 1. Dynamische Kreatin-Berechnung (Direkter Produkt-Link)
         if sport_tage >= 3:
             kr_menge = round(gewicht * 0.05, 1)
             st.markdown(f"""
@@ -276,9 +276,9 @@ if st.button("Unverbindliche Empfehlung berechnen"):
                 <p><b>Möglicher Richtwert:</b> ca. {kr_menge}g täglich nach der Belastung.</p>
             </div>
             """, unsafe_allow_html=True)
-            st.link_button("🛒 Auf Amazon suchen", "https://amazon.de")
+            st.link_button("🛒 Direkt zum Top-Produkt auf Amazon", "https://amazon.de")
 
-        # 2. Dynamische Kollagen-Berechnung
+        # 2. Dynamische Kollagen-Berechnung (Direkter Produkt-Link)
         kol_kapseln = 3 if sport_tage >= 4 else 2
         st.markdown(f"""
         <div class="result-card">
@@ -286,9 +286,9 @@ if st.button("Unverbindliche Empfehlung berechnen"):
             <p><b>Allgemeine Orientierung:</b> ca. {kol_kapseln} Kapseln täglich für deine Hautelastizität und Gelenke.</p>
         </div>
         """, unsafe_allow_html=True)
-        st.link_button("🛒 Auf Amazon suchen", "https://amazon.de")
+        st.link_button("🛒 Direkt zum Top-Produkt auf Amazon", "https://amazon.de")
 
-        # 3. Whey Protein an Trainingstagen
+        # 3. Whey Protein an Trainingstagen (Direkter Produkt-Link)
         if sport_tage >= 1:
             st.markdown("""
             <div class="result-card">
@@ -296,9 +296,9 @@ if st.button("Unverbindliche Empfehlung berechnen"):
                 <p><b>Allgemeine Orientierung:</b> 1-2 Shakes à 30g zur Deckung des sportlich erhöhten Eiweißbedarfs.</p>
             </div>
             """, unsafe_allow_html=True)
-            st.link_button("🛒 Auf Amazon suchen", "https://amazon.de")
+            st.link_button("🛒 Direkt zum Top-Produkt auf Amazon", "https://amazon.de")
 
-        # 4. Omega-3 Logik
+        # 4. Omega-3 Logik (Direkte Produkt-Links)
         if kein_fisch:
             st.markdown("""
             <div class="result-card">
@@ -306,7 +306,7 @@ if st.button("Unverbindliche Empfehlung berechnen"):
                 <p><b>Allgemeine Orientierung:</b> 2 Kapseln täglich zu einer Hauptmahlzeit als fischfreie Alternative.</p>
             </div>
             """, unsafe_allow_html=True)
-            st.link_button("🛒 Auf Amazon suchen", "https://amazon.de")
+            st.link_button("🛒 Direkt zum veganen Top-Produkt auf Amazon", "https://amazon.de")
         else:
             st.markdown("""
             <div class="result-card">
@@ -314,9 +314,9 @@ if st.button("Unverbindliche Empfehlung berechnen"):
                 <p><b>Allgemeine Orientierung:</b> 1-2 Kapseln täglich zur Grundversorgung.</p>
             </div>
             """, unsafe_allow_html=True)
-            st.link_button("🛒 Auf Amazon suchen", "https://amazon.de")
+            st.link_button("🛒 Direkt zum Top-Produkt auf Amazon", "https://amazon.de")
 
-        # 5. Vitamin D3 Logik
+        # 5. Vitamin D3 Logik (Direkter Produkt-Link)
         if wenig_sonne:
             st.markdown("""
             <div class="result-card">
@@ -324,19 +324,19 @@ if st.button("Unverbindliche Empfehlung berechnen"):
                 <p><b>Allgemeine Orientierung:</b> 1 Tropfen/Kapsel jeden zweiten Tag bei geringer Sonnenexposition.</p>
             </div>
             """, unsafe_allow_html=True)
-            st.link_button("🛒 Auf Amazon suchen", "https://amazon.de")
+            st.link_button("🛒 Direkt zum Top-Produkt auf Amazon", "https://amazon.de")
 
-        # 6. Regeneration Basics bei viel Sport (Magnesium, Zink, MSM)
+        # 6. Regeneration Basics bei viel Sport (Direkter Produkt-Link)
         if sport_tage >= 4:
             st.markdown("""
             <div class="result-card">
-                <h4>🔋 Regeneration & Gelenke (Magnesium, Zink, MSM)</h4>
-                <p><b>Allgemeine Orientierung:</b> Essenziell bei hoher Gelenkbelastung und Muskelspannung. Magnesium vor dem Schlafen einnehmen.</p>
+                <h4>🔋 Regeneration & Gelenke (Magnesium & Zink)</h4>
+                <p><b>Allgemeine Orientierung:</b> Essenziell bei hoher Gelenkbelastung. Magnesium vor dem Schlafen einnehmen.</p>
             </div>
             """, unsafe_allow_html=True)
-            st.link_button("🛒 Auf Amazon suchen", "https://amazon.de")
+            st.link_button("🛒 Direkt zur Kombination auf Amazon", "https://amazon.de")
 
-        # 7. Pre-Workout Booster
+        # 7. Pre-Workout Booster (Direkter Produkt-Link)
         if sport_tage >= 4:
             st.markdown("""
             <div class="result-card">
@@ -344,9 +344,9 @@ if st.button("Unverbindliche Empfehlung berechnen"):
                 <p><b>Allgemeine Orientierung:</b> Ca. 30–45 Minuten vor harten Einheiten für mentalen Fokus und gesteigerten Blutfluss.</p>
             </div>
             """, unsafe_allow_html=True)
-            st.link_button("🛒 Auf Amazon suchen", "https://amazon.de")
+            st.link_button("🛒 Direkt zum Booster auf Amazon", "https://amazon.de")
 
-        # 8. Ashwagandha Logik
+        # 8. Ashwagandha Logik (Direkter Produkt-Link)
         if viel_stress:
             st.markdown("""
             <div class="result-card">
@@ -354,7 +354,7 @@ if st.button("Unverbindliche Empfehlung berechnen"):
                 <p><b>Allgemeine Orientierung:</b> 1 Kapsel am Abend zur Unterstützung der Cortisolsenkung.</p>
             </div>
             """, unsafe_allow_html=True)
-            st.link_button("🛒 Auf Amazon suchen", "https://amazon.de")
+            st.link_button("🛒 Direkt zum Top-Produkt auf Amazon", "https://amazon.de")
 
 # ==========================================
 # REINER, DEZENTER FOOTER & CREDITS

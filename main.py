@@ -279,7 +279,7 @@ if st.button("Unverbindliche Empfehlung berechnen"):
             st.markdown("""<div class="dashboard-card"><h4>🌿 Ashwagandha (KSM-66) <span class="target-value">Zielwert: 1 Kapsel</span></h4><p><b>Anwendung:</b> Abends vor dem Schlafen einnehmen.</p><p>Unterstützt den Organismus bei der Regulierung des Cortisolspiegels (Stresshormon).</p></div>""", unsafe_allow_html=True)
 
 # ==========================================
-# BEREICH 2: DAS DETAIL-LEXIKON (Zum Nachschlagen)
+# BEREICH 2: DAS DETAIL-LEXIKON (Vollständig repariert!)
 # ==========================================
 st.subheader("🔍 INHALTSSTOFFE NACHSCHLAGEN")
 
@@ -294,14 +294,17 @@ auswahl = st.selectbox(
 
 if auswahl != "Bitte wählen...":
     details = SUPP_DB[auswahl]
-    icon = details.get("icon", "🧬")
-    st.markdown(f"""
-    <div class="dashboard-card" style="border-top: 3px solid #38BDF8;">
-        <h4>{icon} {auswahl}</h4>
-        <p><b>Physiologischer Zweck:</b> {details['wirkung']}</p>
-        <p><b>Biochemischer Prozess:</b> {details['koerper']}</p>
-    </div>
-    """, unsafe_allow_html=True)
+    
+    # Wir nutzen st.container() für absolute Stabilität bei Updates
+    with st.container():
+        # Titel mit Icon direkt über Streamlit generiert
+        st.markdown(f"#### {details.get('icon', '🧬')} {auswahl}")
+        
+        # Die Informationen sauber als strukturierter Text ausgegeben
+        st.markdown(f"**Physiologischer Zweck:**\n{details['wirkung']}")
+        st.markdown(f"**Biochemischer Prozess im Körper:**\n{details['koerper']}")
+        st.markdown("---")
+
 
 # ==========================================
 # FOOTER & CREDITS

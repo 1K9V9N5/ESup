@@ -25,11 +25,17 @@ st.markdown("""
     }
     
     h1 {
-        font-size: 2rem !important;
-        font-weight: 800 !important;
-        letter-spacing: -0.5px;
-        color: #FFFFFF !important;
+        font-size: 2.8rem !important; /* Massiv vergrößert für maximalen Impact */
+        font-weight: 900 !important; /* Extrem fett */
+        letter-spacing: -1.5px; /* Buchstaben enger zusammen für modernen Look */
+        text-align: center !important; /* Mittig zentriert */
+        margin-top: 10px !important;
         margin-bottom: 0px !important;
+        
+        /* Die Magie: Ein leuchtender Farbverlauf direkt im Text */
+        background: linear-gradient(135deg, #FFFFFF 30%, #38BDF8 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
     
     h3 {
@@ -169,9 +175,13 @@ SUPP_DB = {
 }
 
 # --- APP BRANDING ---
+# Die zentrierte, wuchtige Hauptüberschrift
 st.markdown('<h1>🧬 ESUP</h1>', unsafe_allow_html=True)
-st.markdown('<p translate="no" style="font-size: 1rem; color: #38BDF8; font-weight: 700; margin-top: -5px; margin-bottom: 20px;">Easy Supplements</p>', unsafe_allow_html=True)
 
+# Perfekt zentrierte Unterüberschrift direkt darunter
+st.markdown('<p translate="no" style="font-size: 1.1rem; color: #38BDF8; font-weight: 800; text-align: center; margin-top: -2px; margin-bottom: 25px; letter-spacing: 1px; text-transform: uppercase;">Easy Supplements</p>', unsafe_allow_html=True)
+
+st.write("<p style='text-align: center; font-size: 0.95rem; color: #94A3B8;'>Wissenschaftliche Orientierungshilfe zur Strukturierung der sportlichen Nahrungsergänzung.</p>", unsafe_allow_html=True)
 # ==========================================
 # BEREICH 1: DIE DIAGNOSE-KONSOLE
 # ==========================================

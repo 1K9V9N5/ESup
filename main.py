@@ -364,7 +364,7 @@ if st.button("Unverbindliche Empfehlung berechnen"):
             </div>
             """, unsafe_allow_html=True)
 
-        # 7. Pre-Workout Booster (Citrullin, Beta-Alanin, Coffein, Tyrosin, Taurin, Rote Beete)
+        # 7. Pre-Workout Booster
         if sport_tage >= 4:
             st.markdown("""
             <div class="result-card">
@@ -391,6 +391,7 @@ if st.button("Unverbindliche Empfehlung berechnen"):
                 </p>
             </div>
             """, unsafe_allow_html=True)
+
 
 # ==========================================
 # REINER, DEZENTER FOOTER & CREDITS

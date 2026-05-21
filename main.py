@@ -112,7 +112,7 @@ st.markdown("""
         transform: translateY(-1px);
         box-shadow: 0 6px 16px rgba(56, 189, 248, 0.3);
     }
-    .custom-disclaimer {
+        .custom-disclaimer {
         font-size: 0.8rem;
         color: #94A3B8; 
         line-height: 1.4;
@@ -120,10 +120,18 @@ st.markdown("""
         border-top: 1px solid #334155;
         padding-top: 15px;
     }
+    
+    /* HIER EINGEFÜGT: Tastatur-Sperre für Handys */
+    .stSelectbox input {
+        pointer-events: none !important;
+        caret-color: transparent !important;
+    }
+    
     [data-testid="collapsedControl"] { display: none !important; }
     section[data-testid="stSidebar"] { display: none !important; }
     </style>
 """, unsafe_allow_html=True)
+
 
 # ==========================================
 # SCIENTIFIC DATABASE (Alle 17 legalen Supplements sind zurück!)

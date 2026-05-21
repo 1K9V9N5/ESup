@@ -205,7 +205,7 @@ SUPP_DB = {
 # --- APP INHALT ---
 
 # Hauptüberschrift
-st.markdown('<h1>🧬 ESUB</h1>', unsafe_allow_html=True)
+st.markdown('<h1>🧬 ESUP</h1>', unsafe_allow_html=True)
 
 # Englische Markenerklärung
 st.markdown('<p translate="no" style="font-size: 1rem; color: #84CC16; font-weight: 600; margin-top: -5px; margin-bottom: 20px;">Easy Supplements</p>', unsafe_allow_html=True)

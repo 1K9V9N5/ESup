@@ -1,2 +1,2 @@
-# ESub
-Easy Subblements
+# ESup
+Easy Supplements
